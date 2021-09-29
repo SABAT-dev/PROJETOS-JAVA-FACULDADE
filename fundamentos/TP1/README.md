@@ -1,0 +1,1 @@
+Nesse projeto eu tive como desafio do TP1 de Fundamentos em JAVA na faculdade, desenvolver um Sistema de Controle Acadêmico bem simples.
