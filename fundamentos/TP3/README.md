@@ -6,7 +6,7 @@
 
 ​				
 
-​				Foram colocada em prática as seguintes habilidades durante as etapas 3 e 4:
+​				Foram colocada em prática as seguintes habilidades durante as etapas 5 e 6:
 
 - *Escrever o tratamento de exceções com try/catch/finally;*
 - *Escrever o lançamento de exceções com throws/throw;*
