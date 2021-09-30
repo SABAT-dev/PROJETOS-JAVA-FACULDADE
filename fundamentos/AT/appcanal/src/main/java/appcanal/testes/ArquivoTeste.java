@@ -110,11 +110,11 @@ public class ArquivoTeste {
 									System.out.println(e.getMessage());
 								}
 								
-								futebol.setTime(null); //VERIFICAR
+								futebol.setTime(null);
 								break;
 								
 							default:
-								System.out.println("Pedido sem tipo!!!"); //VERIFICAR
+								System.out.println("Plano sem tipo!!!");
 								break;
 							}
 						}					
@@ -124,14 +124,13 @@ public class ArquivoTeste {
 					
 					plano.setServicos(servicos);
 					
-					System.out.println(servicos);
-					
 					for(Servico sv : plano.getServicos()) {
 						escrita.write(
 								plano.getDuracaoPlano()+";"+
 								plano.getCliente().getNome()+";"+
 								sv.getCanal()+";"+
 								sv.calcularPreco()+"\r\n");
+						System.out.println(sv);
 					}	
 	
 					leitura.close();
