@@ -5,31 +5,53 @@
 <title>Insert title here</title>
 </head>
 <body>
-	Nome:
-	<br>
-	<input type="text" >
-	<br>
-	
-	E-mail:
-	<br>
-	<input type="email" >
-	<br>
-	
-	Escolaridade:
-	<br>
-	<input type="radio"> Graduação
-	<input type="radio"> Especialização
-	<input type="radio"> Mestrado
-	<input type="radio"> Doutorado
-	<br>
-	
-	Disciplinas:
-	<br>
-	<input type="checkbox"> Fundamentos Java
-	<input type="checkbox"> Programação Orientada a Objetos
-	<input type="checkbox"> Projeto de Bloco
-	<input type="checkbox"> Java Web
-	<input type="checkbox"> Java Nuvem
+
+	<form action="">
+		Nome:
+		<br>
+		<input type="text" name="nome" placeholder="Digite o seu nome">
+		<br>
+		<br>
+		
+		E-mail:
+		<br>
+		<input type="email" name="email" placeholder="Digite o seu e-mail">
+		<br>
+		<br>
+		
+		Escolaridade:
+		<br>
+		<input type="radio" name="escolaridade"> Graduação
+		<input type="radio"name="escolaridade"> Especialização
+		<input type="radio"name="escolaridade"> Mestrado
+		<input type="radio" name="escolaridade"> Doutorado
+		<br>
+		<br>
+		
+		Disciplinas:
+		<br>
+		<input type="checkbox" name="disciplinas"> Fundamentos Java
+		<input type="checkbox" name="disciplinas"> Programação Orientada a Objetos
+		<input type="checkbox" name="disciplinas"> Projeto de Bloco
+		<input type="checkbox" name="disciplinas"> Java Web
+		<input type="checkbox" name="disciplinas"> Java Nuvem
+		<br>
+		<br>
+		
+		Regiões:
+		<br>	
+		<select name="regiao">
+			<option>Norte</option>
+			<option>Nordeste</option>
+			<option>Centro-Oeste</option>
+			<option>Sul</option>
+			<option>Sudeste</option>
+		</select>
+		<br>
+		<br>
+		
+		<button type="submit">Cadastrar</button>
+	</form>
 	
 </body>
 </html>
