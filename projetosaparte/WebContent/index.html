@@ -6,46 +6,33 @@
 </head>
 <body>
 
-	<form action="">
-		Nome:
-		<br>
+	<form action="confirmation.html" method="post">
+		<h3>Nome:</h3>
 		<input type="text" name="nome" placeholder="Digite o seu nome">
-		<br>
-		<br>
 		
-		E-mail:
-		<br>
+		<h3>E-mail:</h3>
 		<input type="email" name="email" placeholder="Digite o seu e-mail">
-		<br>
-		<br>
 		
-		Escolaridade:
-		<br>
-		<input type="radio" name="escolaridade"> Graduação
-		<input type="radio"name="escolaridade"> Especialização
-		<input type="radio"name="escolaridade"> Mestrado
-		<input type="radio" name="escolaridade"> Doutorado
-		<br>
-		<br>
+		<h3>Escolaridade:</h3>
+		<input type="radio" name="escolaridade" value="G"> Graduação
+		<input type="radio"name="escolaridade" value="E"> Especialização
+		<input type="radio"name="escolaridade" value="M"> Mestrado
+		<input type="radio" name="escolaridade" value="D"> Doutorado
 		
-		Disciplinas:
-		<br>
-		<input type="checkbox" name="disciplinas"> Fundamentos Java
-		<input type="checkbox" name="disciplinas"> Programação Orientada a Objetos
-		<input type="checkbox" name="disciplinas"> Projeto de Bloco
-		<input type="checkbox" name="disciplinas"> Java Web
-		<input type="checkbox" name="disciplinas"> Java Nuvem
-		<br>
-		<br>
+		<h3>Disciplinas:</h3>
+		<input type="checkbox" name="disciplinas" value="FJ"> Fundamentos Java
+		<input type="checkbox" name="disciplinas" value="POO"> Programação Orientada a Objetos
+		<input type="checkbox" name="disciplinas" value="PB"> Projeto de Bloco
+		<input type="checkbox" name="disciplinas" value="JW"> Java Web
+		<input type="checkbox" name="disciplinas" value="JN"> Java Nuvem
 		
-		Regiões:
-		<br>	
+		<h3>Regiões:</h3>	
 		<select name="regiao">
-			<option>Norte</option>
-			<option>Nordeste</option>
-			<option>Centro-Oeste</option>
-			<option>Sul</option>
-			<option>Sudeste</option>
+			<option value="N">Norte</option>
+			<option value="Ne">Nordeste</option>
+			<option value="C">Centro-Oeste</option>
+			<option value="S">Sul</option>
+			<option value="Se">Sudeste</option>
 		</select>
 		<br>
 		<br>
