@@ -7,22 +7,22 @@
 </head>
 <body>
 	<div class="container">
-		<form action="confirmation.html" method="post">		
+		<form action="aluno" method="post">		
 			
 			<div class="form-group">
 	    		<label>Nome:</label>
-	   				<input type="text" class="form-control" placeholder="Digite o seu nome">
+	   				<input type="text" class="form-control" placeholder="Digite o seu nome" name="nome" value="Simon Assagra">
 	  		</div>
 			
 			<div class="form-group">
 	    		<label>E-mail:</label>
-	   				<input type="email" class="form-control" placeholder="Digite o seu e-mail">
+	   				<input type="email" class="form-control" placeholder="Digite o seu e-mail" name="email" value="sr.simonassagra@gmail.com">
 	  		</div>
 
 			<div class="form-check-inline">
 				<label class="form-check-label">Escolaridade:
 				<br>
-					<input type="radio" class="form-check-input" name="escolaridade" value="G"> Graduação
+					<input checked type="radio" class="form-check-input" name="escolaridade" value="G"> Graduação
 					<input type="radio" class="form-check-input" name="escolaridade" value="E"> Especialização
 					<input type="radio" class="form-check-input" name="escolaridade" value="M"> Mestrado
 					<input type="radio" class="form-check-input" name="escolaridade" value="D"> Doutorado
@@ -34,11 +34,11 @@
 			<div class="form-check-inline">
 				<label class="form-check-label">Disciplinas:
 				<br>
-					<input type="checkbox" class="form-check-input" name="disciplinas" value="FJ"> Fundamentos Java
+					<input type="checkbox" class="form-check-input" name="disciplinas" value="FUND"> Fundamentos Java
 					<input type="checkbox" class="form-check-input" name="disciplinas" value="POO"> Programação Orientada a Objetos
-					<input type="checkbox" class="form-check-input" name="disciplinas" value="PB"> Projeto de Bloco
-					<input type="checkbox" class="form-check-input" name="disciplinas" value="JW"> Java Web
-					<input type="checkbox" class="form-check-input" name="disciplinas" value="JN"> Java Nuvem
+					<input checked type="checkbox" class="form-check-input" name="disciplinas" value="PB"> Projeto de Bloco
+					<input checked type="checkbox" class="form-check-input" name="disciplinas" value="WEB"> Java Web
+					<input checked type="checkbox" class="form-check-input" name="disciplinas" value="NUV"> Java Nuvem
 				</label>
 			</div>
 			<br>
@@ -49,7 +49,7 @@
 				<select class="form-control"name="regiao">
 					<option value="N">Norte</option>
 					<option value="Ne">Nordeste</option>
-					<option value="C">Centro-Oeste</option>
+					<option selected value="CO">Centro-Oeste</option>
 					<option value="S">Sul</option>
 					<option value="Se">Sudeste</option>
 				</select>
