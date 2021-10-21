@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="appcanal/.mvn/wrapper"/>
+	<classpathentry kind="src" path="appcanal/src/main/java"/>
+	<classpathentry kind="src" path="appcanal/src/test/java"/>
+	<classpathentry kind="lib" path="appcanal/target/appcanal-0.0.1-SNAPSHOT.jar"/>
+	<classpathentry kind="output" path="appcanal/target/classes"/>
+</classpath>
