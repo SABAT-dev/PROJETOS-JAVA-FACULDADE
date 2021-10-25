@@ -1,0 +1,7 @@
+duracao do plano;nome do cliente;HBO;40.1
+duracao do plano;nome do cliente;Diney+;90.1
+duracao do plano;nome do cliente;Globo;98.05
+duracao do plano;nome do cliente;TeleCine;185.16
+duracao do plano;nome do cliente;Record;360.09
+duracao do plano;nome do cliente;Megapix;360.12
+duracao do plano;nome do cliente;Netflix;54.92
