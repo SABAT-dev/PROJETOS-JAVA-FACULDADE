@@ -2,28 +2,15 @@ package br.edu.infnet.venturaweb.domain.usuarios;
 
 import java.util.Objects;
 
-import javax.validation.constraints.NotBlank;
-
 public class Usuario {
 
     private Integer id;
     
-    @NotBlank(message = "O campo NOME é obrigatório!")
-    private String nome;
-    
-    @NotBlank(message = "O campo ENDEREÇO é obrigatório!")
-    private String endereco;
-    
-    @NotBlank(message = "O campo TELEFONE é obrigatório!")
-    private String telefone;
-    
-    @NotBlank(message = "O campo E-MAIL é obrigatório!")
-    private String email;
-    
-    @NotBlank(message = "O campo SENHA é obrigatório!")
+    private String nome;    
+    private String endereco;    
+    private String telefone;    
+    private String email;    
     private String senha;
-    
-    @NotBlank(message = "O campo CPF é obrigatório!")
     private String cpf;
     
     private String razaoSocial;
@@ -128,13 +115,11 @@ public class Usuario {
 		this.tipo = tipo;
 	}
 
-	
 	@Override
 	public int hashCode() {
-		return Objects.hash(cnpj, cpf, email, endereco, id, nome, razaoSocial, senha, telefone, tipo);
+		return Objects.hash(email);
 	}
 
-	
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -144,18 +129,6 @@ public class Usuario {
 		if (getClass() != obj.getClass())
 			return false;
 		Usuario other = (Usuario) obj;
-		return Objects.equals(cnpj, other.cnpj) && Objects.equals(cpf, other.cpf) && Objects.equals(email, other.email)
-				&& Objects.equals(endereco, other.endereco) && Objects.equals(id, other.id)
-				&& Objects.equals(nome, other.nome) && Objects.equals(razaoSocial, other.razaoSocial)
-				&& Objects.equals(senha, other.senha) && Objects.equals(telefone, other.telefone)
-				&& Objects.equals(tipo, other.tipo);
+		return Objects.equals(email, other.email);
 	}
-
-	@Override
-	public String toString() {
-		return "br.edu.infnet.venturaweb.domain.usuarios.Usuario[ id=" + id + " ]";
-	}
-    
-    
-	
 }

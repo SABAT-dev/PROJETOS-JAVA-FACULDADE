@@ -32,9 +32,9 @@ public class UsuarioController {
 		return "empresa/cadastroEmpresa";
 	}
 	
-	//VOLTANDO PARA INDEX APÓS CADASTRO
+	//VOLTANDO PARA INDEX, APÓS CADASTRO	
 	@PostMapping(value = "/cadastro")
-	public ModelAndView cadastrarConta(@Valid Usuario usuario, BindingResult br) {		
+	public ModelAndView cadastrarConta(@Valid Usuario usuario, BindingResult br) {
 		ModelAndView retorno = new ModelAndView("index");
 		if (br.hasErrors()) {
 			retorno.addObject("erros", br.getFieldErrors());
@@ -64,11 +64,11 @@ public class UsuarioController {
 		
 		if (org.apache.commons.lang3.StringUtils.isNotBlank(email) && org.apache.commons.lang3.StringUtils.isNotBlank(senha)) {        
 			Usuario usuario = new Usuario();
-            String rota = "index";
             try{
                 usuario = usuarioService.obterPorEmail(email);
             }catch(Exception e){
             }
+            String rota = "index";
 
 			if (usuario != null && senha.equals(usuario.getSenha())) {
 				switch (usuario.getTipo()) {
