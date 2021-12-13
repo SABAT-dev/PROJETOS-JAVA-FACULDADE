@@ -1,0 +1,8 @@
+duracao do plano;nome do cliente;false;1;
+Filme;HBO;celular;39.90;romance;20.00;false;
+Serie;Diney+;smarttv;90.00;terror;10.00;false;
+Esporte;Globo;tvbox;90.00;telenovela;5.00;true;
+Filme;TeleCine;computador;180.00; acao;16.00;true;
+Esporte;Record;celular;360.00;telenovela;9.00;false;
+Filme;Megapix;videogame;360.00;comedia;12.00;false;
+Serie;Netflix;tvbox;39.90;ficcao;2.00;true;
